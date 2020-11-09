@@ -14,6 +14,8 @@ int CubeY=500;
 int BossCubeX=0;
 int BossCubeY=0;
 int u=0;
+
+int r;
 void setup()
 {
   background(0);
@@ -37,7 +39,13 @@ void draw()
 }
 void keyPressed()
 {
-  
+  if(key=='w'||key=='a'||key=='s'||key=='d') {
+    r=1;
+  }
+  else{
+   r=0; 
+  }
+
   if (key=='w') {
     CubeY=CubeY-GitterY; 
     
